@@ -23,7 +23,7 @@ Servo::Servo (int pinIndex, int aMin, int aMax, int initial, int offset, bool in
     pinIndex (pinIndex), aMin (aMin), aMax (aMax), initial (initial), offset (offset), invert (invert), angle (1000)
 {
     standardServo.attach (pinIndex);
-    rotateTo (initial);
+    void rotateTo (initial);
 }
 
 Servo::rotateTo (int angle) {

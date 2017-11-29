@@ -22,7 +22,7 @@ typedef Servo StandardServo;
 class Servo {
     public:
         Servo (int pinIndex, int aMin, int aMax, int initial, int offset, bool invert);
-        rotateTo (int angle);
+        void rotateTo (int angle);
     private:
         StandardServo standardServo;
         int pinIndex, aMin, aMax, initial, offset;
